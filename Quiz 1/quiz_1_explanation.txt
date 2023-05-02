@@ -1,0 +1,41 @@
+there are 3 hospitals and there are people staying in them.
+
+we create 2 variable admitted and recovered.
+they'll get a value randomly, and admitted>recovered
+(admitted and recovered people are fixed in each month and for all hospitals)
+
+total admitted and recovered people in "n months" will be calculated by a recursive function.
+then you'll print the density of the hospital 1/2/3 according to their beginning patient number.
+
+
+Line by Line Explanation
+
+7:	you need to define the symbolic constant N with #define
+	if you do it with " int N=3; " , you'll lose points
+
+
+9-16:
+	number_patients function takes 4 values:
+		patients: the beginning patient number of hospital 1/2/3  -->line 37-46, the code wants this value
+		recovered , admitted: randomly gets a value		-->line 52-55
+		month: how many months we'll calculate		-->line 49-50
+
+18-28:
+	hospital_ranking function takes 2 values:
+		beginning: the beginning patient number a hospital
+		ending: the number of patients after n months,
+			   it is calculated by the number_patients function,
+			    at line 63, you can see the second input for hospital_ranking function is the number_patients function
+		this function prints blue/yellow/red according to the density of the hospital 1/2/3 according to their beginning patient number
+
+30-73: MAIN FUNCTION:
+
+	32: it is important to define your array with the symbolic constant N (in my code it is: int arr[N] )
+	
+	37-46: it takes our arr[] elements, which are ( 1<= n <=50 )
+
+	48-50: month input
+
+	52-55: admitted and recovered variables randomly get a value that is between 1 and 10, until admitted>recovered
+
+	59-64: executes the code for each hospital
