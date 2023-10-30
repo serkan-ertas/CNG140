@@ -1,13 +1,13 @@
-///*** kuroschin ***///
+///*** Serkan Ertas ***///
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int roll_a_dice(){//to roll a dice
-    return rand()%6+1;
+    return rand() %6 + 1;
 }
 
-int play_computer(int turnCount,int totalScore) {//it takes the turnCount to print which round it is, and totalScore to update it
+int play_computer(int turnCount, int totalScore) {  //it takes the turnCount to print which round it is, and totalScore to update it
     int dice1=1, dice2=1, dice3=1, dice4=1, dice5=1, noScore,myScore, i = 5;
     printf("Round %d -- My Turn\n", turnCount);
     printf("===========================================================\n");
@@ -230,5 +230,3 @@ int main(){
     else{ printf("YOU ARE THE WINNER!");}
     return 0;
 }
-
-///***011100110110010101110010011010110110000101101110001000000110010101110010011101000110000101110011***///
