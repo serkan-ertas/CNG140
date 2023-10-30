@@ -1,4 +1,4 @@
-///*** kuroschin ***///
+///*** Serkan Ertas ***///
 ////answers for paper is at the bottom
 
 #include <stdio.h>
@@ -86,4 +86,3 @@ int main() {
  *
  * This function returns void because there is no need to return anything since we can just print the color of the hospitals.
  */
-///***011100110110010101110010011010110110000101101110001000000110010101110010011101000110000101110011***///
